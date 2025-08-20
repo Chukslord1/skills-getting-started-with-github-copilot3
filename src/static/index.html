@@ -16,8 +16,26 @@
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
-          <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
+          <!-- Example activity card (JS should render similar cards and populate the participants list) -->
+          <div class="activity-card" data-activity-id="example-1">
+            <h4>Robotics Club</h4>
+            <p>Build and program robots — meet Wednesdays after school.</p>
+
+            <div class="participants">
+              <h5>
+                Participants
+                <span class="count">3</span>
+              </h5>
+              <ul>
+                <li>Alice Johnson</li>
+                <li>Ben Carter</li>
+                <li>Clara Smith</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Activities will be injected here by app.js.
+               JS should: populate .participants ul with <li>name</li> entries and set the .count text. -->
         </div>
       </section>
 
