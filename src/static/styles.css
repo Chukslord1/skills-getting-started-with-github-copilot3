@@ -70,8 +70,55 @@ section h3 {
   color: #0066cc;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+/* Participants area inside an activity card */
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.participants .count {
+  background-color: #e8eaf6;
+  color: #1a237e;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  min-width: 28px;
+  text-align: center;
+}
+
+.participants ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  max-height: 110px;
+  overflow-y: auto;
+}
+
+.participants li {
+  padding: 4px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* subtle scrollbar styling for supported browsers */
+.participants ul::-webkit-scrollbar {
+  width: 8px;
+}
+.participants ul::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 8px;
 }
 
 .form-group {
